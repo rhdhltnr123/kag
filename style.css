@@ -1,0 +1,114 @@
+/* 스타일 변수 선언 */
+:root {
+  /* 전역변수 */
+  --main-color: #1abc9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", "맑은 고딕", sans-serif;
+}
+
+header {
+  background: #ccc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  background: var(--main-color);
+  color: white;
+  padding: 11px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+header > nav {
+  display: flex;
+}
+
+header > nav > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* outline: 1px solid black; */
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  background: var(--main-color);
+  border-bottom: 3px solid transparent;
+  padding-bottom: 7px;
+}
+
+header > nav > a:hover,
+header > nav > a:active {
+  border-bottom: 3px solid #fff;
+}
+
+main {
+  padding: 20px 15px;
+}
+
+main h2 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main ul li img {
+  width: 100%;
+}
+
+main .pet-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .pet-list .item {
+  /* 칼럼의 크기(여백이 있는경우) = 칼럼크기 - (여백 / 칼럼수) */
+  width: calc(50% - (15px / 2));
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+/* 우측 마진 제거(2n = 짝수) */
+main .pet-list .item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+main .pet-list .item .name {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 사진에 이름 배치 */
+main .pet-list .item {
+  position: relative;
+  /* outline: 1px solid red; */
+}
+
+main .pet-list .item .name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+main .pet-list .item img {
+  display: flex;
+}
+
+main .pet-list .item .name:nth-child(2n):active {
+  background: brown;
+}
