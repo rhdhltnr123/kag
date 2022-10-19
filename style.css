@@ -121,7 +121,7 @@ main .pet-list .item .name:nth-child(2n):active {
   background: brown;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -132,4 +132,4 @@ main .pet-list .item .name:nth-child(2n):active {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */
