@@ -109,12 +109,27 @@ main .pet-list .item .name {
   bottom: 0;
   width: 100%;
   border-radius: 0 0 40px 40px;
+  animation: rotate 2s linear infinite;
 }
 
 main .pet-list .item img {
   display: flex;
+  animation: rotate 2s ease-in-out infinite;
 }
 
 main .pet-list .item .name:nth-child(2n):active {
   background: brown;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
