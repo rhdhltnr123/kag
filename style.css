@@ -67,6 +67,7 @@ main h2 {
 
 main ul li img {
   width: 100%;
+  border-radius: 40px 40px 40px 40px;
 }
 
 main .pet-list {
@@ -103,6 +104,7 @@ main .pet-list .item .name {
   position: absolute;
   bottom: 0;
   width: 100%;
+  border-radius: 0 0 40px 40px;
 }
 
 main .pet-list .item img {
